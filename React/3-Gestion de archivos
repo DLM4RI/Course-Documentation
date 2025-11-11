@@ -1,0 +1,123 @@
+==========================================================
+
+	        3. Primeros pasos
+
+==========================================================
+
+	3.1	¿que es?  Main.jsx
+
+----------------------------------------------------------
+
+ Es el punto de entrada de nuestra web o app, como se
+ Hace?, este sale apartir de crear un script y vincularlo
+desde el html con el main.jsx de la siguiente manera :
+
+  <script type="module" src=/src/main.jsx> </script>
+
+  Porque module? porque este atributo le indica al
+  navegador que use ES6, recuerda que "ES" son las 
+  "Versiones de Js" entonces le decimos que use la ultima
+  "Sistema Modular" o "Sistema de modulos", que nos permite
+  importar y exportar codigo js
+
+
+-----------------------------------------------------------
+
+3.2  Imports y Exports
+
+-----------------------------------------------------------
+
+los imports o (import) nos permiten traer
+codigo js a archivos jsx.
+
+
+ejemplo comun :
+
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import './index.css'
+import App from './App.jsx'
+
+
+recuerdas cuando viste la carptea "node-modules" bueno
+al tener esta carpeta con modulos, no hace falta usar
+link o urls para llamar el codigo js de react que necesitamos
+sino que al tener "node-modules" ahi nos instala el "Vite", 
+el modulo "react", necesario para usarlo
+
+ahora como funciona el import?
+
+Para saber como funciona necesitamos primeor entender el
+
+Exports o (export), el cual nos permite extraer codigo
+js a archivos jsx,
+
+---------------------------------------------------------------
+
+ejemplo comun : esto esta en la ruta /src/hola.jsx
+
+export function hola_mundo() {
+	console.log("Hola mundo");
+};
+
+(recuerda esto)
+
+----------------------------------------------------------------
+
+lo que hace aqui es exportar la funcion "hola_mundo"
+es decir le dices al codigo, "Esto lo usare luego, en otro
+archivo jsx porfavor recuerdalo"
+
+y para que este se ejecute necesitamos importarlo en un archivo
+por lo general siempre es en el main.jsx, entonces tendiramos 
+que hacer lo siguiente :
+
+----------------------------------------------------------------
+
+import { nombre del objeto a importar } from "ruta del archivo Jsx"
+
+nuestro ejemplo quedaria tal que :
+
+
+import { hola_mundo } from /src/hola.jsx.
+
+
+
+----------------------------------------------------------------
+================================================================
+
+///////////////////////ALERTA LEER ESTO\\\\\\\\\\\\\\\\\\\\\\\\\
+EL EXPORT NO ES NECESARIO CUANDO TRABAJAMOS CON Vite y react....
+================================================================
+
+
+================================================================
+	ESTO SI ES EL PRIMER PROYECTO QUE HACES...
+----------------------------------------------------------------
+
+
+	3.3 Pre-Primer Proyecto con React
+
+----------------------------------------------------------------
+
+Para aprender react, primeramente necesitamos eliminar cosas 
+para no confundirnos, es por eso que eliminaremos
+de nuestro arbol o tree donde estan las rutas lo siguiente :
+
+	"App.css"
+	"App.jsx"
+	"index.css"
+
+a su vez elimina los import de los archivos eliminados
+
+-----------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+

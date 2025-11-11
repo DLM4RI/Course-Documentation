@@ -1,0 +1,97 @@
+===========================================================================
+
+
+  	              2.1   Pre-Programacion en React
+
+
+===========================================================================
+
+	                 2.1  ENTORNO EN NUESTRO IDE
+
+===========================================================================
+
+  Lo Primero que observaremos sera la estructura de
+  Nuestro Proyecto, algo de la siguiente manera :
+
+		
+REACT-CLASS-1/         → Carpeta principal del proyecto React con Vite  
+├── node_modules/      → Dependencias instaladas por npm  
+├── public/            → Archivos estáticos (no pasan por Vite)  
+│   └── vite.svg       → Logo por defecto de Vite  
+├── src/               → Código fuente de tu app React  
+│   ├── assets/        → Imágenes y recursos del proyecto  
+│   ├── App.css        → Estilos del componente principal  
+│   ├── App.jsx        → Componente principal de React  
+│   ├── index.css      → Estilos globales de la app  
+│   └── main.jsx       → Punto de entrada que monta React en el DOM  
+├── .gitignore         → Archivos y carpetas que Git no sube  
+├── eslint.config.js   → Reglas de formato y lint del código  
+├── index.html         → Plantilla HTML donde se monta la app  
+├── package-lock.json  → Versiones exactas de las dependencias  
+├── package.json       → Configuración, scripts y dependencias del proyecto  
+├── README.md          → Documentación del proyecto (Para GitHub) 
+└── vite.config.js     → Configuración de Vite (plugins, opciones, etc.)
+
+
+
+ Se ve omcplicado, pero no hace falta conocer a fondo todo
+ya que la mayoria de cosasa son dependencias que no necesitan
+una explicacion profunda, asi que empecemos :
+
+====================================================================================================================================================
+
+| Carpeta         | Qué contiene                                      | Qué se hace dentro                                                           |
+| --------------- | ------------------------------------------------- | ---------------------------------------------------------------------------- |
+| **assets/**     | Recursos visuales (imágenes, íconos, SVG, logos). | Guardas los archivos que tu app muestra.                                     |
+| **components/** | Pequeños bloques reutilizables de UI.             | Creas componentes como `Button.jsx`, `Navbar.jsx`, `Card.jsx`.               |
+| **pages/**      | Páginas completas (pantallas).                    | Cada archivo es una vista de la app: `Home.jsx`, `Login.jsx`, `Profile.jsx`. |
+| **hooks/**      | Hooks personalizados (reutilizan lógica).         | Ej: `useUser()`, `useFetch()`.                                               |
+| **context/**    | Estados globales compartidos (sin Redux).         | Ej: `AuthContext.jsx`, `ThemeContext.jsx`.                                   |
+| **services/**   | Llamadas a APIs, funciones de datos.              | Ej: `api.js`, `userService.js`.                                              |
+| **routes/**     | Manejo de navegación.                             | Define qué componente se muestra según la URL.                               |
+| **utils/**      | Funciones de utilidad.                            | Ej: `formatDate()`, `validateEmail()`.                                       |
+| **styles/**     | Estilos globales o temas.                         | Archivos CSS o variables SCSS.                                               |
+
+
+Solo guarda esta informacion, porque no quiero enredarte,
+ya iremos viendo todo poco a poco, no te estreses recuerda
+que igual la teoria es importante antes de la practica
+
+
+Pero de manera general quedaria asi con todo lo dicho :
+
+===========================================================================
+
+REACT-CLASS-1/                  → carpeta principal del proyecto
+├── node_modules/               → se crea automáticamente (no la tocas)
+├── public/                     → dentro de la raíz, para archivos estáticos
+└── src/                        → dentro de la raíz, todo tu código React
+    ├── assets/                 → dentro de src, para imágenes, íconos, fuentes
+    ├── components/             → dentro de src, componentes reutilizables
+    ├── pages/                  → dentro de src, pantallas completas
+    ├── hooks/                  → dentro de src, lógica reutilizable de React
+    ├── context/                → dentro de src, estados globales (Context API)
+    ├── services/               → dentro de src, conexión con APIs o backend
+    ├── routes/                 → dentro de src, configuración de rutas
+    ├── utils/                  → dentro de src, funciones auxiliares
+    ├── styles/                 → dentro de src, estilos globales o temas
+    ├── App.jsx                 → dentro de src, componente raíz de la app
+    └── main.jsx                → dentro de src, punto de entrada de React
+├── index.html                  → en la raíz, plantilla HTML principal
+├── package.json                → en la raíz, configuración del proyecto
+├── vite.config.js              → en la raíz, configuración de Vite
+├── .gitignore                  → en la raíz, archivos ignorados por Git
+├── eslint.config.js            → en la raíz, reglas de formato del código
+└── README.md                   → en la raíz, documentación del proyecto
+
+===========================================================================
+
+Veras esto como nah.... pero es importante a la hora de conseguir trabajo
+para tener claro todo y saber que hace cada cosa y no te pase como el de AWS
+que tiro medio internet xD
+
+
+
+
+
+

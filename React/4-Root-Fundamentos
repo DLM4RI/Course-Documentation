@@ -1,0 +1,109 @@
+======================================================
+
+  	      4. Fundamentos del Root
+
+======================================================
+
+  4.1 Como primera medida declararemos como constante
+      el root, pero.... que es el root?
+
+------------------------------------------------------
+
+	4.2 ROOT
+
+ Se le llama root al punto donde React se conecta con
+ el DOM de tu app, es decir con tu documento o pagina
+ 
+	HAY 2 TIPOS :
+
+	- <div id="root"></div>
+
+		Este es el elemento en el HTML
+		donde se monta tu app, es decir
+		donde va apareciendo lo q haces
+
+	- React Root
+		
+		Este es el objeto que usa React para
+		Renderizar y actualizar tu app dentro
+		del DOM 
+
+------------------------------------------------------
+
+======================================================
+
+	                 IMPORTANTE : 
+                  Todo esto ya viene armado
+    Pero es importante que lo conozcas porque asi entenderas
+		     React a la perfecion 
+
+=======================================================
+
+  Sin esto no podras hacer tu app, es importantisimo 
+
+=======================================================
+
+	4.3  Manera correcta de crear un Root
+
+  La herramienta para crear la estructura de tu proyecto
+		    (Vite en este caso)
+
+Te arrojara algo como esto :
+(despues de haber borrado lo ya mencionado)
+
+#########################################################
+
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)
+
+#########################################################
+
+MUNDO LABORAL (OPCIONAL) :
+
+Que no esta mal, pero si quieres conseguir trabajo
+necesitaras usar buenas practicas y esto debe venir
+de haber aprendido bien Js
+
+Pero recuerda, siempre si un Dato se va a mantener 
+de la misma manera siempre y nunca sera cambiado
+se usa la declaracion de variable constante "Const"
+
+Esto para evitar que se cambie la ruta donde se renderizara
+nuestra app o pagina.
+
+la buena practica se veria tal que :
+
+###########################################################
+
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+
+
+const root = createRoot(document.getElementById('root'));
+
+root.render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)
+
+###########################################################
+
+Declaramos una constante con nombre root y luego le asignamos
+el valor del root de nuestro html
+
+no te enredes con lo que esta dentro de los parentesis de 
+render, eso lo veremos en el siguiente capitulo
+
+===========================================================
+
+
+
+

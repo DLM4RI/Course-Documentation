@@ -1,0 +1,164 @@
+
+===============================================
+
+         1. PROGRAMACION EN REACT 
+
+===============================================
+
+       1.1 COMO INSTALARLO?/ USARLO ? 
+
+===============================================
+
+	   1.1.1   VITE
+
+-----------------------------------------------
+Vite se pronuncia "Vit" viene del frances
+"Rapido", fue creada por "Evan You" (creador 
+de vue.js), es usada para crear web super
+rapidas, se usa mucho para Vue, React u Svelte
+----------------------------------------------
+
+===============================================
+
+      1.1.2  ESPECIFICAMENTE QUE ES?
+
+===============================================
+
+Un Bundler y servidor de desarrollo, que hace?
+transforma tu codigo (JSX, TypeScript, css etc)
+en algo que el navegador pueda entender
+
+===============================================
+
+	1.1.3      INSTALACION
+
+===============================================
+	
+	1.1.3.1     REQUISITOS
+	
+	- Tener Node.Js Instalado
+
+===============================================
+
+	1.1.3.2    INSTALACION 
+
+-----------------------------------------------
+		
+ ->  "- npm init -y" 
+     esto inicializa el proyecto
+
+ ->  "npm create vite@latest" 
+     esto crea el proyecto
+
+ ->  Una vez ejecutado el anterior, nos pedira
+     nombre del proyecto, se lo asignamos....
+
+ -> Nos pedira el nombre del paquete ( pon cualquiera)
+	ejemplo :  react-vite , mi-app
+
+ ->  Luego nos pregunta que framework o libreria
+     vamos a usar (Vue, Vanilla, React... etc)
+
+ ->  En este caso usaremos React
+
+ ->  Luego nos pedira que Javascript queremos usar
+	
+	-JavaScript (Vanilla)
+	-TypeScript 
+	-JavaScript + SWC
+	-TypeScript + SWC
+
+
+
+-------------------------------------------------------------   
+||||||||||||||||TEORIA (OPCIONAL OMITIR)|||||||||||||||||||||
+-------------------------------------------------------------
+	
+              "SWC" es un transpilador 
+
+-------------------------------------------------------------
+
+ Es una herramienta que convierte el Js Moderno en Js
+ Compatible con todos los navegadores, es decir, lo "Envejece" 
+ para que todos los navegadores puedan entenderlo
+
+-------------------------------------------------------------
+	             
+		     Y "SWC"?
+
+-------------------------------------------------------------
+
+Es Un transpilador SWC ( Speedy Web Compiler ), escrito En
+"RUST", Diseñado para remplazar a "BABEL" 
+	
+   -> BABEL = Fue un transpilador mas usado durante años
+	pero fue hecho en Js lo cual lo hace potente
+	pero lento
+ 
+   -> SWC = Es lo mismo solo que al estar escrito en Rust
+	lo hace x20 mas rapido que BABEL
+
+-------------------------------------------------------------
+
+		    QUE HACE "SWC"?
+
+-------------------------------------------------------------
+
+	CONVIERTE :
+
+	- JSx ---------> JavaScript
+      	- TypeScript --> JavaScript
+	- ESNext ------> ES5 (navegadores antiguos)
+
+ESNEXT? ES5? :  En pocas palabras son las versiones
+		de JavaScript :
+
+		ECMAScript (ES) es el estándar oficial 
+		sobre el cual está basado JavaScript.
+
+-------------------------------------------------------------
+||||||||||||||||||||FINAL DE LA TEORIA|||||||||||||||||||||||
+-------------------------------------------------------------
+	       
+	      CONTINUAMOS CON LA INSTALACION 
+
+ ->  Nos pedira "Use Rolldown-vite?"
+	elegimos  : NO (para no complicarnos la vida)
+
+ -> Nos pedira "Install with npm and start now?
+	elegimos : yes (para que isntale las dependencias de node
+	en nuestro proyecto)
+
+ ->  Una vez hecho todo, nos deja la consola normal
+	sino le damos control + c (para pausar la consola)
+
+ -> Accedemos al proyecto con "cd (nombre que pusiste)"   
+
+ -> "npm install"
+	Esto Instala las dependencias de Node
+
+ -> "npm run dev" para inicializar el preyecto
+
+ -> nos aparece en consola : 
+
+	- El tiempo que demoró
+	- Una direccion local 
+	
+ -> Entramos a la Url local
+
+ -> Verificamos que haya cargado la "pagina"
+
+ -> Listo accedemos al IDE que usamos, en mi caso uso 
+    Visual Estudio Code
+
+ -> "Code ." se abre el IDE
+
+ -> FIN, TIENES TU PROYECTO CREADO EN VITE + REACT
+
+================================================================
+
+
+
+
+
+
