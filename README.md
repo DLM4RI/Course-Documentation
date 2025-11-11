@@ -11,12 +11,20 @@ que buscamos transimitir conocmimientos propios, es decir, lo que
 nosotros como estudiantes vayamos aprendiendo, se estara subiendo
 en este repositorio.
 
-## ========================================================================
 
 ## ULTIMO CURSO : React 
 ## ULTIMA VERSION : V-0.4 Fundamentos del Root
 
+
+
+
+## ========================================================================
+
+
+
 ## ENGLISH (version) 🇺🇸
+
+
 
 This repository was created for people who are tired of watching
 boring tutorials that fail to properly teach the fundamentals of a 
@@ -30,6 +38,8 @@ advanced topics.
 We are a group of students aiming to share our own knowledge
 — in other words, everything we learn as students will 
 be uploaded to this repository.
+
+
 
 ## LATEST COURSE: No Data
 ## LATEST VERSION: Coming Soon
