@@ -1,8 +1,9 @@
-![Texto alternativo](/home/viper/Pictures/Documentimgs.png)
+![Banner](assets/Documentimgs.png)
 
-## 🚀 Bienvenido a nuestro Repositorio de Aprendizaje
+# 🚀 Bienvenido a nuestro Repositorio de Aprendizaje
 
-<!-- Puedes cambiar o eliminar esta línea si aún no tienes banner -->
+Somos "Viper." y "./Wiser" dos chicos que estudian licenciatura en informatica, con una adccion a la programacion y desarrollo de software
+
 
 ## 🎉 ¿Cansado de tutoriales aburridos?
 
