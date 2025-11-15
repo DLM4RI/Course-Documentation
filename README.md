@@ -121,3 +121,5 @@ Realiza los ejercicios para reforzar lo aprendido.
 ## Created and developed by "Viper." and "Wiser"
 
 
+![Banner](assets/nosotros.png)
+
