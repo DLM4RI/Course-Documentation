@@ -12,15 +12,6 @@ nosotros como estudiantes vayamos aprendiendo, se estara subiendo
 en este repositorio.
 
 
-## ULTIMO CURSO : React 
-## ULTIMA VERSION : V-0.4 Fundamentos del Root
-
-
-
-
-## ========================================================================
-
-
 
 ## ENGLISH (version) 🇺🇸
 
@@ -39,7 +30,3 @@ We are a group of students aiming to share our own knowledge
 — in other words, everything we learn as students will 
 be uploaded to this repository.
 
-
-
-## LATEST COURSE: No Data
-## LATEST VERSION: Coming Soon
