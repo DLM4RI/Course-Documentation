@@ -1,0 +1,94 @@
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Instalación manual desde binarios precompilados
+----------------------------------------------------------------------------------------------------------------------------------------------------
+#1. Descarga del paquete
+----------------------------------------------------------------------------------------------------------------------------------------------------
+#Obtener el archivo desde la web oficial 
+[Descargamos el archivo .tar.gz o .tar.xz desde la página del fabricante]
+=> Ej: Firefox Developer Edition o CLion
+	| Estos paquetes NO son .deb ni instaladores automáticos. Son distribuciones portables que deben ser extraídas y organizadas manualmente. |
+----------------------------------------------------------------------------------------------------------------------------------------------------
+#2. Extraer el contenido
+----------------------------------------------------------------------------------------------------------------------------------------------------
+#Descomprimir el archivo
+[Nos movemos a la carpeta donde descargamos el archivo]
+=> cd ~/Descargas
+
+[Extraemos el paquete]
+=> tar -xf nombre_del_archivo.tar.gz
+=> tar -xf nombre_del_archivo.tar.xz
+	| Esto creará una carpeta con el software listo para usarse. No se instala con apt. |
+----------------------------------------------------------------------------------------------------------------------------------------------------
+#3. Mover el programa a /opt (Práctica profesional)
+----------------------------------------------------------------------------------------------------------------------------------------------------
+#Organizar el programa en un directorio estándar
+[Movemos la carpeta extraída al directorio /opt]
+=> sudo mv nombre_carpeta /opt/nombre_programa
+	| /opt se utiliza para software externo o descargado manualmente. |
+	| Ejemplos: /opt/clion , /opt/firefox-developer |
+----------------------------------------------------------------------------------------------------------------------------------------------------
+#4. Ejecutar la aplicación manualmente
+----------------------------------------------------------------------------------------------------------------------------------------------------
+#Iniciar el programa desde su carpeta interna
+[Ejecutar Firefox Developer Edition]
+=> /opt/firefox-developer/firefox
+
+[Ejecutar CLion]
+=> /opt/clion/bin/clion.sh
+	| La mayoría de programas incluyen un script de arranque en su carpeta “bin”. |
+----------------------------------------------------------------------------------------------------------------------------------------------------
+#5. Crear acceso directo (Integración con el sistema)
+----------------------------------------------------------------------------------------------------------------------------------------------------
+#Agregar el programa al menú de aplicaciones [Crear el archivo de acceso
+directo] => sudo nano /usr/share/applications/nombre_programa.desktop
+[Agregar el contenido básico""]
+[Desktop Entry]
+Type=Application
+Name=Nombre del Programa
+Exec=/opt/nombre_programa/bin/ejecutable
+Icon=/opt/nombre_programa/bin/icono.png
+Terminal=false
+Categories=Utility;
+
+[Actualizar el listado de aplicaciones]
+=> sudo update-desktop-database
+	| Después de esto, el programa aparecerá en el menú de tu entorno gráfico. |
+----------------------------------------------------------------------------------------------------------------------------------------------------
+#6. Crear un enlace simbólico (Acceso desde terminal)
+----------------------------------------------------------------------------------------------------------------------------------------------------
+#Hacer que la app pueda ejecutarse desde cualquier lugar
+[Crear un symlink en /usr/local/bin]
+=> sudo ln -s /opt/nombre_programa/bin/ejecutable /usr/local/bin/nombre_programa
+	| Ahora podrás ejecutar la app solo escribiendo “nombre_programa” en la terminal. |
+----------------------------------------------------------------------------------------------------------------------------------------------------
+#7. Actualización del programa
+----------------------------------------------------------------------------------------------------------------------------------------------------
+#Actualizar versiones descargadas manualmente
+[Descargar nuevamente la versión más reciente]
+(Obtener el nuevo archivo .tar.gz o .tar.xz desde la web)
+
+[Eliminar la versión anterior]
+=> sudo rm -r /opt/nombre_programa
+
+[Repetir el proceso de extracción y movimiento]
+=> tar -xf archivo
+=> sudo mv nueva_carpeta /opt/nombre_programa
+	| Este método garantiza que siempre tengas la versión actual, sin romper dependencias del sistema. |
+----------------------------------------------------------------------------------------------------------------------------------------------------
+#8. Alternativas profesionales a los .tar.gz / .tar.xz
+----------------------------------------------------------------------------------------------------------------------------------------------------
+#Métodos modernos de instalación
+[Flatpak]
+(Recomendado)
+	| Tiene amplia compatibilidad, sandboxing, actualizaciones automáticas. |
+
+[Snap]
+(Similar a Flatpak, usado sobre todo en Ubuntu.)
+
+[AppImage]
+(Portables, sin instalación, ejecutas y listo.)
+
+[Apt / repos oficiales]
+(Útil para software del sistema, pero no disponible en todos los programas [como Firefox Developer Edition o
+CLion].)
+----------------------------------------------------------------------------------------------------------------------------------------------------
