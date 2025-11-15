@@ -92,7 +92,7 @@ en la Consola, para verlo hay 2 maneras....
 	-> click al icono de un cuadrado
 	   con una linea horizontal algo asi:
                   _______________
-                 |		 |
+                 |		         |
                  |               |
                  |_______________|
                  |_______________|
