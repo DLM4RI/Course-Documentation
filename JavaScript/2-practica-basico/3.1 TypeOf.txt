@@ -1,0 +1,139 @@
+=====================================================
+
+	          3.1 TypeOF
+
+====================================================
+
+TypeOF es un operador (es algo
+que veremos mas adelante "operador)
+
+se usa para determinar el tipo de dato 
+de una variable
+
+===================================================
+
+        ANTES : QUE ES UNA SINTAXIS?
+
+==================================================
+
+Es ese conjunto de reglas que determinan
+como se define o debe escribir en un lenguaje
+para que sea entendido de una manera correcta
+
+---------------------------------------------
+
+ EJEMPLO : 
+
+let nombre = "Ana";
+
+ -> let → palabra clave para declarar una variable
+
+ -> nombre → nombre de la variable
+
+ -> = → operador de asignación
+
+ -> "Ana" → valor asignado
+
+ -> ; → indica el fin de la instrucción 
+(opcional en JavaScript, pero recomendable)
+
+Ahora si continuemos
+
+============================================
+
+
+           Como se usa TypeOf?
+
+============================================
+
+	
+          typeof + valor
+
+--------------------------------------------
+
+ -> valor puede ser una variable, un 
+    número, una cadena, un objeto, etc.
+
+ -> El resultado es siempre una cadena 
+    (string) que indica el tipo.
+
+--------------------------------------------
+
+EJEMPLOS : 
+
+let numero = 42;
+console.log(typeof numero); // "number"
+
+let texto = "Hola";
+console.log(typeof texto); // "string"
+
+let bandera = true;
+console.log(typeof bandera); // "boolean"
+
+let objeto = { nombre: "Ana" };
+console.log(typeof objeto); // "object"
+
+let indefinido;
+console.log(typeof indefinido); // "undefined"
+
+let funcion = function() {};
+console.log(typeof funcion); // "function"
+
+---------------------------------------------
+
+"console.log" es una funcion para ejecutar el codigo
+en la Consola, para verlo hay 2 maneras....
+
+1. (como profesional) desde el IDE (en este caso Visual Studio Code)
+
+   -> abre tu consola en Visual
+	-> arriba a la derecha 
+
+	-> click al icono de un cuadrado
+	   con una linea horizontal algo asi:
+                  _______________
+                 |		 |
+                 |               |
+                 |_______________|
+                 |_______________|
+
+        -> se te abrira la consola
+
+	-> para este paso tendras q tener node
+	   instalado, el cual es el "entorno
+	   de ejecucion de Js"
+	 (ve al curso instalaciones y ahi aprenderas)
+	
+	-> Escribe node (nombre de tu archivo Js)
+
+	-> y si todo sale bien deberias ver tu codigo
+	   ejecutarse
+
+2. (facil) Desde el navegador : 
+
+	-> Abre tu archivo html en tu navegador
+	   de confianza
+
+	-> presiona la tecla f12, en algunos PCs
+	  se debe presionar "alt" + f12,
+
+	-> se te desplegara un cuadro, con el codigo
+	   html de tu pagina
+
+	-> buscaras en la parte superior, algo como
+	   "console" o "consola" 
+
+	-> ahi se ejecutara todo tu codigo 
+
+======================================================
+
+
+TypeOf tiene muchos usos, mas que todo para validar
+que datos se usan en un programa y saber que hacer luego...
+
+
+======================================================
+
+Escrito por "Viper." 
+
+-----------------> Siguiente clase
