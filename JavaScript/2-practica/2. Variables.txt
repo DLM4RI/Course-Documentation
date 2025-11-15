@@ -5,7 +5,7 @@
 =======================================
 
 En el 99% de lenguajes de programacion
-te vas a encontrar esto "variables",
+te vas a encontrar esto "variables,
 pero que son?
 
 ----------------------------------------
@@ -36,10 +36,13 @@ caso arreglar la silla
 
 antes de conocer como funcionan las variables
 debes entender que la programacion, en Js
-es por bloques...Como asi?...
+es por bloques o por "scope"...Como asi?...
 
 Un bloque es todo lo que está entre llaves
 en el codigo se veria algo asi 
+
+de manera tecnica, Scope significa ámbito o alcance.
+Es desde dónde puedes acceder (o no) a una variable.
 -----------------------------------------------
  {
  
