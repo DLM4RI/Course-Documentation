@@ -92,3 +92,23 @@ Categories=Utility;
 (Útil para software del sistema, pero no disponible en todos los programas [como Firefox Developer Edition o
 CLion].)
 ----------------------------------------------------------------------------------------------------------------------------------------------------
+#9. Agregar programas al PATH (Método profesional)
+-------------------------------------------------------------------------->
+#Método 1: Crear enlace simbólico en /usr/local/bin
+[Crear un symlink para ejecutar el programa desde la terminal]
+=> sudo  ln -s /opt/nombre_programa/bin/ejecutable /usr/local/bin/nombre_programa
+	| /usr/local/bin ya forma parte del PATH por defecto. |
+	| Profesionales usan este método para programas grandes como CLion o Firefox Developer. |
+
+#Método 2: Agregar carpeta al PATH desde ~/.bashrc o ~/.zshrc
+[Editararchivo de configuración según la shell]
+=> nano ~/.zshrc o
+=> nano ~/.bashrc
+
+[Agregar al final del archivo]
+export PATH=“$PATH:/opt/nombre_programa/bin”
+
+[Recargar la configuración]
+=> source ~/.zshrc o => source ~/.bashrc
+	| Método recomendado para scripts personales o herramientas pequeñas. |
+-------------------------------------------------------------------------->
