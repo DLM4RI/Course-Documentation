@@ -31,6 +31,9 @@ De igual manera los desarrolladores avanzados pueden utilizar esta guia para ref
 [Configuramos color y formato agradable]
 => git config --global color.ui auto
 
+[Configuramos pull]
+=> git config --global pull.rebase true
+
 [Configuramos push]
 => git config --global push.default simple
 
