@@ -70,7 +70,7 @@
 ---------------------------------------------------------------------
 #5. Automatizar el agente SSH
 ---------------------------------------------------------------------
-#Configurar el inicio automatico del agente SSH
+#Iniciar ssh-agent automáticamente desde archivo config (Maquinas Hosts)
 [Crear y editar el archivo "config" en ~/.ssh]
 => nano ~/.ssh/config
 
@@ -78,6 +78,12 @@
     Host *
 	AddKeysToAgent yes
 	IdentityFile ~/.ssh/id_ed25519_personal
+# Iniciar ssh-agent automáticamente desde .bashrc/.zshrc (WSL)
+[Abrimos el archivo .bashrc o .zshrc]
+=> nano ~/.bashrc
+=> nano ~/.zshrc
+[Escribimos esta linea al final del archivo]
+eval "$(ssh-agent -s)" >/dev/null
 ---------------------------------------------------------------------
 #6. Configurar multiples cuentas con SSH
 ---------------------------------------------------------------------
