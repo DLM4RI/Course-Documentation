@@ -1,6 +1,6 @@
 ![Banner](assets/Documentimgs.png)
 
-# 🚀 Bienvenido a nuestro Repositorio de Aprendizaje
+# 🚀 Bienvenido a nuestro Repositorio de Aprendizaje "MALAS PRACTICAS"
 
 Somos "Viper." y "./Wiser" dos chicos que estudian licenciatura en informatica, con una adccion a la programacion y desarrollo de software
 
