@@ -52,7 +52,7 @@ lo escrito en este curso....
 Si bien **HTML** no es un lenguaje de **programación**, tiene si sintaxis como todo lenguaje..., y es la siguiente.....
 
 ##### TIPOS DE ETIQUETA
----
+
  - **Etiquetas en pares :**  Estas etiquetas, son las que tienen
  contenido interno, y por esa razon deben abrirse y cerrarse
 	<details>
@@ -74,7 +74,7 @@ Si bien **HTML** no es un lenguaje de **programación**, tiene si sintaxis como 
 	```
 
 	 </details>
----
+
 - **void elements :**
 No llevan etiqueta de cierre porque **no tienen contenido interno**. Su función es **insertar** algo, no envolverlo o almacenar "algo".
 
