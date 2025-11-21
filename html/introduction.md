@@ -1,5 +1,5 @@
 
-![Banner-Introductorio](../../assets/Banner-html.png)
+![Banner-Introductorio](../assets/Banner-html.png)
 
  
 ---
