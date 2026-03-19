@@ -11,6 +11,7 @@
 
 ## 2. Gestión de Contenedores
 | Comando				| Descripción			    	| 
+|---------------------------------------|---------------------------------------|
 | docker run <imagen> 			| Crear y ejecutar contenedor		|
 | docker start <contenedor> 		| Iniciar contenedor detenido		|
 | docker stop <contenedor> 		| Detener contenedor			| 
@@ -38,6 +39,7 @@
 
 ## 4. Inspección y Logs
 | Comando 				| Descripción 					|
+|---------------------------------------|-----------------------------------------------|
 | docker logs <contenedor> 		| Ver logs 					| 
 | docker logs -f <contenedor> 		| Seguir logs en tiempo real 			|
 | docker inspect <contenedor> 		| Información detallada en JSON 		|
@@ -70,6 +72,7 @@ docker cp <contenedor>:/ruta/archivo.txt ./
 
 ## 7. Volúmenes
 | Comando 					| Descripción 					|
+|-----------------------------------------------|-----------------------------------------------|
 | docker volume ls 				| Listar volúmenes 				|
 | docker volume create <nombre> 		| Crear volumen 				|
 | docker volume inspect <nombre> 		| Detalles del volumen 				|
