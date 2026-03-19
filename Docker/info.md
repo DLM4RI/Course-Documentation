@@ -2,23 +2,23 @@
 ## 1. Gestión de Imagenes
 | Comando                               | Descrpción                        	|
 |---------------------------------------|---------------------------------------|
-| `docker pull <imagen>`                  | Descargar imagen del registry     	|
-| `docker build -t <nombre> .`            | Construir imagen desde Dockerfile 	|
-| `docker images`	                        | Listar imágenes locales           	|
-| `docker rmi <imagen>`                   | Eliminar imagen                   	|
-| `docker tag <imagen> <nuevo-nombre>`    | Etiquetar imagen                  	|
-| `docker push <imagen>`                  | Subir imagen al registry          	|
+| `docker pull <imagen>`                | Descargar imagen del registry     	|
+| `docker build -t <nombre> .`          | Construir imagen desde Dockerfile	|
+| `docker images`	                | Listar imágenes locales           	|
+| `docker rmi <imagen>`                 | Eliminar imagen                   	|
+| `docker tag <imagen> <nuevo-nombre>`  | Etiquetar imagen                  	|
+| `docker push <imagen>`                | Subir imagen al registry          	|
 
 ## 2. Gestión de Contenedores
 | Comando				| Descripción			    	| 
 |---------------------------------------|---------------------------------------|
-| `docker run <imagen>` 			| Crear y ejecutar contenedor		|
+| `docker run <imagen>` 		| Crear y ejecutar contenedor		|
 | `docker start <contenedor>` 		| Iniciar contenedor detenido		|
 | `docker stop <contenedor>` 		| Detener contenedor			| 
-| `docker restart <contenedor>` 		| Reiniciar contenedor			|
+| `docker restart <contenedor>` 	| Reiniciar contenedor			|
 | `docker rm <contenedor>`		| Eliminar contenedor 			|
 | `docker ps` 				| Listar contenedores activos 		|
-| `docker ps -a` 				| Listar todos los contenedores		|
+| `docker ps -a` 			| Listar todos los contenedores		|
 
 ## 3. Parámetros de docker run
 | Parámetro 				| Descripción 					| Ejemplo 			|
@@ -28,12 +28,12 @@
 | `-v` 					| Montar volumen host:contenedor 		| -v /datos:/app/data 		|
 | `-e` 					| Variable de entorno 				| -e DB_HOST=localhost 		| 
 | `--name` 				| Nombre del contenedor 			| --name mi-app 		|
-| `--rm` 					| Eliminar al detenerse	docker run 		| --rm alpine			| 
-| `-it` 					| Modo interactivo con terminal	docker run 	| -it ubuntu bash 		|
+| `--rm` 				| Eliminar al detenerse	docker run 		| --rm alpine			| 
+| `-it` 				| Modo interactivo con terminal	docker run 	| -it ubuntu bash 		|
 | `--network` 				| Red a usar 					| --network mi-red 		|
 | `--restart` 				| Política de reinicio 				| --restart always 		|
 | `--env-file` 				| Cargar variables desde archivo 		| --env-file .env 		| 
-| `-u`  					| Usuario dentro del contenedor			| -u 1000:1000 			|
+| `-u`  				| Usuario dentro del contenedor			| -u 1000:1000 			|
 | `--memory` 				| Límite de memoria RAM				| --memory 512m 		|
 | `--cpus` 				| Límite de CPUs 				| --cpus 1.5 			|
 
@@ -41,9 +41,9 @@
 | Comando 				| Descripción 					|
 |---------------------------------------|-----------------------------------------------|
 | `docker logs <contenedor>` 		| Ver logs 					| 
-| `docker logs -f <contenedor>` 		| Seguir logs en tiempo real 			|
-| `docker inspect <contenedor>` 		| Información detallada en JSON 		|
-| `docker stats` 				| Uso de recursos en tiempo real		| 
+| `docker logs -f <contenedor>` 	| Seguir logs en tiempo real 			|
+| `docker inspect <contenedor>` 	| Información detallada en JSON 		|
+| `docker stats` 			| Uso de recursos en tiempo real		| 
 | `docker top <contenedor>` 		| Procesos dentro del contenedor 		|
 | `docker diff <contenedor>` 		| Cambios en el sistema de archivos 		|
 
@@ -68,7 +68,7 @@ docker cp <contenedor>:/ruta/archivo.txt ./
 | `docker network ls` 				| Listar redes 					|
 | `docker network create <nombre>` 		| Crear red 					|
 | `docker network connect <red> <contenedor>` 	| Conectar contenedor a red			|
-| `docker network inspect <red>` 			| Detalles de la red 				|
+| `docker network inspect <red>` 		| Detalles de la red 				|
 
 ## 7. Volúmenes
 | Comando 					| Descripción 					|
