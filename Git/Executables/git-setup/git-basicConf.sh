@@ -10,17 +10,18 @@ gitinstall() {
         return 0
     fi
     # Validación de SO
+    echo "Instalando Git..."
     source /etc/os-release
     case "$ID" in
         ubuntu|debian)
-            sudo apt update
-            sudo apt install -y git
+            apt update
+            apt install -y git
             ;;
         fedora|rhel)
-            sudo dnf install -y git
+            dnf install -y git
             ;;
         arch)
-            sudo pacman -Syu --noconfirm git
+            pacman -Syu --noconfirm git
             ;;
         *)
             echo "Distribución no soportada"
@@ -39,7 +40,7 @@ gitconf() {
     read -p "Ingrese su email: " gitemail
     git config --global user.name "$gituser"
     git config --global user.email "$gitemail"
-    read -p "Ingrese un editor predeterminado [ 1.nano; 2.vim; 3.VScode ]: " gitcode
+    read -p "Ingrese un editor predeterminado [ 1.vim; 2.VScode ]: " gitcode
     # Validador de Workstation
     gitcode=$(echo "$gitcode" | tr '[:upper:]' '[:lower:]')
     case "$gitcode" in
@@ -63,7 +64,7 @@ gitconf() {
     git config --global color.ui auto
 }
 
-# Orquestaçion
+# Orquestación
 gitinstall
 gitconf
 echo "Configuración de git completada exitosamente."
